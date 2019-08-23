@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head>
+		<style>
+			div {
+				border: 1px solid black;
+				background-color: yellow;
+				box-shadow: 5px 5px 5px #097867;
+			}
+		</style>
+		<script>
+			function MyFunction(){
+				document.getElementById('td5').value;
+			}
+		</script>
+	</head>
+
+	<body>
+		
+		<table>
+			<tr>
+				<td><input type="button" value="Button 1"></td>
+				<td><input type="button" value="Button 2"></td>
+				<td><input type="button" value="Button 3"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="Button 4"></td>
+				<td><input type="button" value="Button 5"></td>
+				<td><input type="button" value="Button 6"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="Button 7"></td>
+				<td><input type="button" value="Button 8"></td>
+				<td><input type="button" value='Button 9' onClick="document.getElementById('td9').style.display='block';"></td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td onMouseOver="document.getElementById('td1').innerHTML='<td>Text 1</td>';">Text 1</td>
+				<td>Text 2</td>
+				<td>Text 3</td>
+			</tr>
+			<tr>
+				<td>Text 4</td>
+				<td id=td5>Text 5</td>
+				<td>Text 6</td>
+			</tr>
+			<tr>
+				<td>Text 7</td>
+				<td>Text 8</td>
+				<td id=td9 onClick="document.getElementById('td9').style.display='none';">Text 9</td>
+			</tr>
+		</table><br>
+		<div>
+			<p id=td1>This is some text</p>
+		</div><br>
+		<input type="text">
+		<input type="button" value="Click me" onClick="MyFunction;">
+
+
+	</body>
+
+</html>
